@@ -1,0 +1,15 @@
+body{
+    background-color: #00C9BD;
+  }
+  #content{
+    width: 55em;
+    text-align: center;
+    margin: 2em auto;
+    background-color: white;
+    padding: 4em;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  #getMessage{
+    margin-bottom: 25px;
+  }
