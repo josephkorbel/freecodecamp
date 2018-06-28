@@ -1,7 +1,3 @@
-/*One of the more difficult challenges so far. Math.random was purely copied from instructions. Rendered results
-correctly without issue. Returned fiftyFifty however instrucions did not mention defining
-fiftyFifty and there was no line indicating a modification should be made there. Had to debuggerfor a 
-bit on that. Set default state of counter to 1 in this.state and modified it in handleClick */
 class Results extends React.Component {
   constructor(props) {
     super(props);
@@ -32,12 +28,13 @@ class GameOfChance extends React.Component {
     });
   }
   render() {
-    let expression = Math.random() > .5; 
+    let expression = Math.random() > .5;
     return (
       <div>
         <button onClick={this.handleClick}>Play Again</button>
-        <Results fiftyFifty={expression}/>
-
+        { /* change code below this line */ }
+        <Results fiftyFifty={expression} />
+        { /* change code above this line */ }
         <p>{'Turn: ' + this.state.counter}</p>
       </div>
     );
